@@ -34,5 +34,3 @@ Check your progress by: Running the Rails server and using Postman make requests
 * Prioritize associations (being able to select an instructor for a student)
 * Commit when you hit 75 minutes
 * When you have finished all deliverables, commit again.
-
-# rails-students-app-api
