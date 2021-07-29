@@ -1,4 +1,4 @@
-# Rails Practice Challenge - Rails Students App
+# Rails Practice Challenge - Students
 
 ## Setup
 
