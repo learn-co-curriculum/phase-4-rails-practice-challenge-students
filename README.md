@@ -4,8 +4,8 @@
 
 To download the dependencies for backend, run:
 
-```sh
-bundle install
+```console
+$ bundle install
 ```
 
 There is some starter code in the `db/seeds.rb` file so that once you've
@@ -13,8 +13,8 @@ generated the models, you'll be able to create data to test your application.
 
 You can run your Rails API on [`localhost:3000`](http://localhost:3000) by running:
 
-```sh
-rails s
+```console
+$ rails s
 ```
 
 There are no tests for this application, so you'll need to check your progress
