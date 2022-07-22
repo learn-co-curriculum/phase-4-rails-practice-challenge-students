@@ -1,5 +1,6 @@
 class InstructorsController < ApplicationController
 rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
+
     def index 
         render json: Instructor.all
     end
@@ -9,17 +10,23 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     end
     
     def create 
-        instructor = Instructor.create!(instructor_params)
+        instructor = Instructor.create(instructor_params)
         render json: instructor, status: :created
     end
 
     def update
+        instructor = find_instructor.update(instructor_params)
+        render json: instructor, status: :accepted
 
     end
 
     def destroy
-
+        instructor = find_instructor
+        instructor.destroy
+        head :no_content
     end
+
+    private
 
     def find_instructor
         Instructor.find(params[:id])
